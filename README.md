@@ -28,7 +28,7 @@ qui ne sont pas dans le projet pour des raisons de sécurités.
 
 ## Compléter le script php
 
-- Executez la requête INSERT précédement écrite dans le cadre du script du formulaire `controllers/contact_script.php`.
+- Executez la requête INSERT précédement écrite dans le cadre du script du formulaire `controllers/contact_form.php`.
 - Effectuez une redirection vers `index.php` et affichez un message de succès.
 
 ## Pour aller plus loin
