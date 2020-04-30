@@ -6,14 +6,12 @@
 #
 
 
+
+
 CREATE DATABASE IF NOT EXISTS `iut_tp_php_form` DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 USE `iut_tp_php_form`;
 
 
-
-
-SET @PREVIOUS_FOREIGN_KEY_CHECKS = @@FOREIGN_KEY_CHECKS;
-SET FOREIGN_KEY_CHECKS = 0;
 
 
 DROP TABLE IF EXISTS `contact`;
@@ -30,28 +28,11 @@ CREATE TABLE `contact` (
 
 
 
-SET FOREIGN_KEY_CHECKS = @PREVIOUS_FOREIGN_KEY_CHECKS;
-
-
-SET @PREVIOUS_FOREIGN_KEY_CHECKS = @@FOREIGN_KEY_CHECKS;
-SET FOREIGN_KEY_CHECKS = 0;
-
-
-LOCK TABLES `contact` WRITE;
-ALTER TABLE `contact` DISABLE KEYS;
-INSERT INTO `contact` (`id`, `full_name_or_company`, `email`, `comment`) VALUES 
+INSERT INTO `contact` (`id`, `full_name_or_company`, `email`, `comment`) VALUES
 	(1,'Alexandre Ferraille','alexandre.ferraille@gmail.com','Pour accentuer la prestation multi-directionnelle, chaque entité doit dématerialiser les solutions partenaires.'),
 	(2,'Getaround','contact@getaround.com','Des milliers de voitures et utilitaires à louer autour de vous. Moins cher et plus rapide.'),
 	(3,'Test','test@test.ninja','En termes de process, concernant une globalisation durable, mieux vaut faire converger les harcèlements bénéfices.'),
 	(4,'Foo Bar','foo@bar.net','Une fois internalisée la multiplicité référentielle, voici notre conviction : externaliser les potentiels métier.'),
 	(5,'John Doe','john@doe.net','En réponse à la prestation conjoncturelle, les bonnes pratiques consistent à impacter les alternatives mobilité.'),
 	(6,'Maxime Ferraille','maxime.ferraille@gmail.com','Là où les benchmarks désignent la revalorisation durable, la connaissance des paramètres permet de gagner les kilo-instructions conseil.');
-ALTER TABLE `contact` ENABLE KEYS;
-UNLOCK TABLES;
-
-
-
-
-SET FOREIGN_KEY_CHECKS = @PREVIOUS_FOREIGN_KEY_CHECKS;
-
 
