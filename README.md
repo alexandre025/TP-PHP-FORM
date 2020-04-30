@@ -1,4 +1,4 @@
-# TP-PHP-FORM
+# Partie 1: TP-PHP-FORM
 
 ## Création de la base de données
 
@@ -36,4 +36,12 @@ qui ne sont pas dans le projet pour des raisons de sécurités.
 Quelques idées: 
 - Empêchez l'accès au script du formulaire en mode GET.
 - Gérez la gestion des erreurs dans le formulaire dans le script php (email non valide, champs manquant...) et affichez une erreur dans le formulaire.
+
+# Partie 2 : API
+
+Créer un script en PHP permettant de renvoyer le résultat d'une recherche sur la table comment au format JSON:
+- Assurez vous d'avoir un peu de data dans votre base de données.
+- Ecrivez votre requête SQL avec l'opérateur SQL LIKE cherchant à la fois sur la column `full_name_or_company` et `email`.
+- Pour le script PHP, utilisez la méthode GET avec le GET parameters "search".
+- Utilisez votre requête SQL, construisez un tableau de données avec les résultats et encodez le en JSON avec la fonction `json_encode`.
 
