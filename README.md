@@ -45,3 +45,9 @@ Créer un script en PHP permettant de renvoyer le résultat d'une recherche sur 
 - Pour le script PHP, utilisez la méthode GET avec le GET parameters "search".
 - Utilisez votre requête SQL, construisez un tableau de données avec les résultats et encodez le en JSON avec la fonction `json_encode`.
 
+# Partie 3 : Consommer l'API
+
+- Créer une nouvelle page search.php contenant un champs de recherche text. 
+- Utiliser `$.get` de JQuery pour envoyer une requête sur notre API.
+- Afficher les résultats dans une div en dessous de la barre de recherche.
+- Afficher un message lorsqu'il n'y a pas de résultats.
